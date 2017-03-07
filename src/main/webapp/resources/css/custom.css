@@ -1,7 +1,6 @@
 #titulo{
 	color: #495FDA;
-	width: 300px;
-	margin: 0 auto;
+	text-align:center;
 }
 
 #contenedor {
@@ -41,12 +40,4 @@
 #grafico {
 	width: 200px;
 	height: 200px;
-}
-
-.th.table{
-	vertical-align:text-top
-}
-
-.td.table{
-	vertical-align:text-top
 }

@@ -23,8 +23,8 @@ public class DadoController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
-
 		model.addAttribute("ranking", this.usuarioService.getAllOrderByTiradas());
+		model.addAttribute("usuarios", usuarioService.getAllAlta());
 		return "home";
 	}
 
