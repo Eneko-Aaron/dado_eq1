@@ -33,7 +33,7 @@ public class DadoDAOImpl implements DadoDAO {
 	@Override()
 	public List<Historial> getHistorial() {
 		ArrayList<Historial> historial= (ArrayList<Historial>) this.jdbctemplate.query(
-				"SELECT u.id, u.nombre, t.fecha FROM tirada as t, usuario as u WHERE u.id=t.id_usuario ORDER BY t.fecha DESC;", 
+				"SELECT u.id, u.nombre, t.fecha FROM tirada as t, usuario as u WHERE u.id=t.id_usuario AND u.fecha_baja IS NULL ORDER BY t.fecha DESC;", 
 				new HistorialMapper());
 		return historial;
 	}

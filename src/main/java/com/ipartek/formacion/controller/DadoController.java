@@ -42,6 +42,7 @@ public class DadoController {
 		
 		model.addAttribute("usuario", usuario);
 		model.addAttribute("ranking", this.usuarioService.getAllOrderByTiradas());
+		model.addAttribute("usuarios", usuarioService.getAllAlta());
 		model.addAttribute("historial", this.dadoService.getHistorial());
 		return "home";
 	}
