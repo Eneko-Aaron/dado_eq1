@@ -1,0 +1,52 @@
+#titulo{
+	color: #495FDA;
+	width: 300px;
+	margin: 0 auto;
+}
+
+#contenedor {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#dado{
+	position:relative;
+	float:left;
+}
+
+#alerta{
+	position:relative;
+	float:left;
+}
+
+#ranking {
+	position:relative;
+	float: right;
+}
+
+#imgranking {
+	width: 200px;
+	height: 200px;
+}
+
+#estadisticas {
+	position:absolute;
+    bottom:40px;
+    right:80px;
+	
+}
+
+
+#grafico {
+	width: 200px;
+	height: 200px;
+}
+
+.th.table{
+	vertical-align:text-top
+}
+
+.td.table{
+	vertical-align:text-top
+}
