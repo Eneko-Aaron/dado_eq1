@@ -43,7 +43,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		return usuarios;
 	}
 	
-	@Override
+	@Override()
 	public List<Usuario> getAllAlta() {
 		ArrayList<Usuario> usuarios = (ArrayList<Usuario>) this.jdbctemplate.query(
 				"SELECT `id`,  `nombre`, `fecha_alta`, `fecha_baja`, `fecha_modificacion` FROM usuario WHERE `fecha_baja` IS NULL ORDER BY `id` DESC;",
@@ -72,7 +72,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		int lineasInsertadas = 0;
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		lineasInsertadas = this.jdbctemplate.update(new PreparedStatementCreator() {
-			@Override
+			@Override()
 			public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
 				PreparedStatement prepared = connection.prepareStatement("INSERT INTO `usuario` (`nombre`) VALUES (?)",
 						Statement.RETURN_GENERATED_KEYS);
@@ -141,7 +141,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		return modificado;
 	}
 
-	@Override
+	@Override()
 	public int countAlta() {
 		int contador = this.jdbctemplate.queryForInt("SELECT COUNT(`id`) as 'total' FROM `usuario` WHERE `fecha_baja` IS NULL");
 

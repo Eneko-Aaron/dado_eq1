@@ -23,7 +23,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 		return this.usuarioDAO.getAll();
 	}
 	
-	@Override
+	@Override()
 	public List<Usuario> getAllAlta() {
 		return this.usuarioDAO.getAllAlta();
 	}
@@ -73,7 +73,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 		return this.usuarioDAO.count();
 	}
 
-	@Override
+	@Override()
 	public int countAlta() {
 		return this.usuarioDAO.countAlta();
 	}

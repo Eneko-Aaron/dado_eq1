@@ -26,7 +26,7 @@ public class AdminController {
 	}
 
 	@RequestMapping(value = "/admin/crear", method = RequestMethod.POST)
-	public String Crear(Usuario usuario, Model model, BindingResult bindingResult) {
+	public String crear(Usuario usuario, Model model, BindingResult bindingResult) {
 		this.usuarioService.add(usuario);
 		model.addAttribute("usuario", new Usuario());
 		model.addAttribute("usuarios", this.usuarioService.getAll());
@@ -34,7 +34,7 @@ public class AdminController {
 	}
 
 	@RequestMapping(value = "/admin/modificar", method = RequestMethod.POST)
-	public String Modificar(Usuario usuario, Model model, BindingResult bindingResult) {
+	public String modificar(Usuario usuario, Model model, BindingResult bindingResult) {
 		this.usuarioService.update(usuario);
 		model.addAttribute("usuario", new Usuario());
 		model.addAttribute("usuarios", this.usuarioService.getAll());
