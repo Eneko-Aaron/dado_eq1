@@ -67,7 +67,7 @@
 					modelAttribute="usuario">
 					<div class="modal-body">
 						<form:label path="nombre">Nombre</form:label>
-						<form:input path="nombre" class="form-control"></form:input>
+						<form:input path="nombre" autofocus="true" class="form-control"></form:input>
 					</div>
 					<div class="modal-footer">
 						<form:button type="submit" class="btn btn-default">Crear</form:button>
@@ -96,7 +96,7 @@
 							<form:input path="id" value="${u.id}" readonly="true"
 								class="form-control"></form:input>
 							<form:label path="nombre">Nombre</form:label>
-							<form:input path="nombre" value="${u.nombre}"
+							<form:input path="nombre" autofocus="true" value="${u.nombre}"
 								class="form-control"></form:input>
 						</div>
 						<div class="modal-footer">
