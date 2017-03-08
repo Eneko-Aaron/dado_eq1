@@ -12,7 +12,11 @@ import com.ipartek.formacion.domain.Dado;
 import com.ipartek.formacion.domain.Usuario;
 import com.ipartek.formacion.service.DadoService;
 import com.ipartek.formacion.service.UsuarioService;
-
+/**
+ * Controlador para lanzar dado, pintar estadisticas y ranking
+ * @author Aaron
+ *
+ */
 @Controller()
 public class DadoController {
 
@@ -21,6 +25,11 @@ public class DadoController {
 	@Autowired()
 	private DadoService dadoService;
 
+	/**
+	 * Mapping principal
+	 * @param model ranking(usuarios de alta ordenados por tiradas)
+	 * @return home
+	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
 		model.addAttribute("ranking", this.usuarioService.getAllOrderByTiradas());
@@ -28,6 +37,11 @@ public class DadoController {
 		return "home";
 	}
 
+	/**
+	 * Mapping para lanzar el dado
+	 * @param model usuario(usuario afortunado), ranking(usuarios de alta ordenados por tiradas)
+	 * @return home
+	 */
 	@RequestMapping(value = "/lanzar", method = RequestMethod.GET)
 	public String dado(Model model) {
 		Dado dado = new Dado();
@@ -46,6 +60,11 @@ public class DadoController {
 		return "home";
 	}
 
+	/**
+	 * Mapping para ir a la pagina de estadisticas
+	 * @param model historial(historial de tiradas)
+	 * @return estadisticas/INDEX
+	 */
 	@RequestMapping(value = "/estadisticas", method = RequestMethod.GET)
 	public String estadistica(Model model) {
 
