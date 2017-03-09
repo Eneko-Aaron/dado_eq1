@@ -33,7 +33,6 @@ public class UsuarioServiceImpl implements UsuarioService {
 		ArrayList<Usuario> usuarios= (ArrayList<Usuario>) this.usuarioDAO.getAllOrderByTiradas();
 		for (Usuario u : usuarios) {
 			u.setTiradas(this.dadoDAO.getAllByUserId(u.getId()));
-			u.setNumTiradas(this.dadoDAO.countById(u.getId()));
 		}
 		return usuarios;
 	}

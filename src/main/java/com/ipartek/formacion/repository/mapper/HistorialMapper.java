@@ -7,7 +7,11 @@ import org.springframework.jdbc.core.RowMapper;
 
 import com.ipartek.formacion.domain.Historial;
 import com.ipartek.formacion.domain.Usuario;
-
+/**
+ * Mapea un ResultSet de las tablas tirada y usuario en un Pojo Historial
+ * @author Equipo 1
+ *
+ */
 public class HistorialMapper implements RowMapper<Historial> {
 
 	@Override()

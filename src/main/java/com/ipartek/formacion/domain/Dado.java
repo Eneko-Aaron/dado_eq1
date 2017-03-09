@@ -1,13 +1,19 @@
 package com.ipartek.formacion.domain;
 
 import java.util.Date;
-
+/**
+ * Pojo Dado
+ * @author Equipo 1
+ *
+ */
 public class Dado {
 	private int idDado;
 	private int numero;
 	private Date fecha;
 	
-	//constructor
+	/**
+	 * Constructor Dado
+	 */
 	public Dado() {
 		super();
 		this.idDado= -1;
@@ -34,12 +40,15 @@ public class Dado {
 		this.fecha = fecha;
 	}
 	
-	//toString
 	@Override()
 	public String toString() {
 		return "Dado [id=" + this.idDado + ", numero=" + this.numero + ", fecha=" + this.fecha + "]";
 	}
 	
+	/**
+	 * Set-ea la propiedad numero con un numero aleatorio
+	 * @param numUsuarios  numero aleatorio maximo
+	 */
 	public void lanzar(int numUsuarios){
 		this.numero= 1 +(int)(Math.random()*numUsuarios);
 	}

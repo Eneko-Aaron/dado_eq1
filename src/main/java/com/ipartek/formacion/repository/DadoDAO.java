@@ -8,10 +8,11 @@ import com.ipartek.formacion.domain.Dado;
 import com.ipartek.formacion.domain.Historial;
 /**
  * DAO para gestionar la tabla tiradas
- * @author Aaron
+ * @author Equipo 1
  *
  */
 public interface DadoDAO {
+	
 	/**
 	 * Conexion a BBDD
 	 * @param dataSource pool de conexiones
@@ -41,15 +42,21 @@ public interface DadoDAO {
 	/**
 	 * Añade una tirada realizada por un usuario
 	 * @param idUsuario id usuario
-	 * @return true: si todo funciona 
+	 * @return true: si añade la linea. false si no pudo
 	 */
 	boolean addTirada( int idUsuario);
 	
+	/**
+	 * Cuenta el numero de tiradas de un usuario
+	 * @param idUsuario id usuario
+	 * @return int numero de tiradas
+	 */
 	int countById(int idUsuario);
 	
-	int countAll();
-	
-	
-	
+	/**
+	 * Cuenta el numero de tiradas totales de todos los usuarios
+	 * @return int numero de tiradas
+	 */
+	int countAll();	
 	
 }

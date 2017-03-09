@@ -14,7 +14,7 @@ import com.ipartek.formacion.service.DadoService;
 import com.ipartek.formacion.service.UsuarioService;
 /**
  * Controlador para lanzar dado, pintar estadisticas y ranking
- * @author Aaron
+ * @author Equipo 1
  *
  */
 @Controller()

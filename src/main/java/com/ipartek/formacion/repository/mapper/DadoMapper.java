@@ -6,7 +6,11 @@ import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
 
 import com.ipartek.formacion.domain.Dado;
-
+/**
+ * Mapea un ResultSet de la tabla tiradas en un Pojo Dado
+ * @author Equipo 1
+ *
+ */
 public class DadoMapper implements RowMapper<Dado> {
 
 	@Override()

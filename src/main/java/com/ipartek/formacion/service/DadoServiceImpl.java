@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ipartek.formacion.domain.Dado;
 import com.ipartek.formacion.domain.Historial;
 import com.ipartek.formacion.repository.DadoDAO;
 
@@ -18,11 +17,6 @@ public class DadoServiceImpl implements DadoService {
 	@Override()
 	public List<Historial> getHistorial() {
 		return this.dadoDAO.getHistorial();
-	}
-
-	@Override()
-	public List<Dado> getAllByUserId(int idUsuario) {
-		return this.dadoDAO.getAllByUserId(idUsuario);
 	}
 
 	@Override()

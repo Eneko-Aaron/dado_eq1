@@ -2,6 +2,11 @@ package com.ipartek.formacion.domain;
 
 import java.util.Date;
 
+/**
+ * 
+ * @author Equipo 1
+ *
+ */
 public class Historial {
 	private Usuario usuario;
 	private Date fecha;

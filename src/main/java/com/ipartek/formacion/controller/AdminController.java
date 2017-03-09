@@ -12,7 +12,7 @@ import com.ipartek.formacion.domain.Usuario;
 import com.ipartek.formacion.service.UsuarioService;
 /**
  * Controlador para gestionar CRUD usuarios
- * @author Aaron
+ * @author Equipo 1
  *
  */
 @Controller()

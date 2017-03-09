@@ -6,7 +6,11 @@ import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
 
 import com.ipartek.formacion.domain.Usuario;
-
+/**
+ * Mapea un ResultSet de la tabla usuario en un Pojo Usuario
+ * @author Equipo 1
+ *
+ */
 public class UsuarioMapper implements RowMapper<Usuario> {
 
 	@Override()

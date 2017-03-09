@@ -2,7 +2,11 @@ package com.ipartek.formacion.domain;
 
 import java.util.Date;
 import java.util.List;
-
+/**
+ * Pojo Usuario
+ * @author Equipo 1
+ *
+ */
 public class Usuario {
 	private int idUsuario;
 	private String nombre;
