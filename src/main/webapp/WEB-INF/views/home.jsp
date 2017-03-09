@@ -23,8 +23,10 @@
 	</c:if>
 	
 	<div id="ranking">
+		
 		<img id="imgranking" src="resources/img/ranking.png" /> <br> <br>
 		<c:if test="${fn:length(ranking)!=0}">
+		<div id="ranking-scroll">
 		<table border=1 class="table">
 			<thead>
 				<tr>
@@ -50,6 +52,7 @@
 				</c:forEach>
 			</tbody>
 		</table>
+		</div>
 		</c:if>
 		<c:if test="${fn:length(ranking)==0}"><h4>No hay usuarios con tiradas.</h4></c:if>
 	</div>
