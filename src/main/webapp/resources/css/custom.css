@@ -1,6 +1,7 @@
-#titulo{
+
+#titulo {
 	color: #495FDA;
-	text-align:center;
+	text-align: center;
 }
 
 #contenedor {
@@ -9,19 +10,25 @@
 	margin-right: auto;
 }
 
-#dado{
-	position:relative;
-	float:left;
+#dado {
+	position: relative;
+	float: left;
 }
 
-#alerta{
-	position:relative;
-	float:left;
+#alerta {
+	position: relative;
+	float: left;
 }
 
 #ranking {
-	position:relative;
+	position: relative;
 	float: right;
+}
+
+#ranking-scroll {
+	height: 500px;
+	overflow: auto;
+	margin-top: 20px;
 }
 
 #imgranking {
@@ -30,10 +37,9 @@
 }
 
 #estadisticas {
-	position:absolute;
-    bottom:40px;
-    left:80px;
-	
+	position: absolute;
+	bottom: 40px;
+	left: 80px;
 }
 
 

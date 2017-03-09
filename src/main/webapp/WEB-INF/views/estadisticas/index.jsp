@@ -8,7 +8,7 @@
 	<div class="row">
 		<div class="col-md-3"></div>
 		<div class="col-md-6">
-			<table class="table">
+			<table class="tablePlugin">
 				<thead>
 					<tr>
 						<th>Nombre</th>
@@ -18,7 +18,7 @@
 
 				<tbody>
 					<c:forEach items="${historial}" var="h">
-						<tr class="info">
+						<tr>
 							<td>${h.u.nombre}</td>
 							<td>${h.fecha}</td>
 						</tr>
